@@ -1,0 +1,40 @@
+version: "3"
+services:
+
+  jenkins:
+    image: myjenkins
+    ports:
+      - 80:8080
+    volumes:
+      - ./downloads:/var/jenkins_home/downloads
+      - ./jobs:/var/jenkins_home/jobs
+      - ./m2deps:/var/jenkins_home/.m2/repository
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - frontend
+    environment:
+      - SONARQUBE_HOST=http://sonarqube:9000
+      - DOCKER_HOST=tcp:127.0.0.1
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+
+  sonarqube:
+    image: sonarqube:6.3.1
+    ports:
+      - 9000:9000
+    networks:
+      - frontend
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+networks:
+  frontend:
