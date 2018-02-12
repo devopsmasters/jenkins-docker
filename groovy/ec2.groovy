@@ -124,16 +124,7 @@ AmazonEC2Cloud amazonEC2Cloud = new AmazonEC2Cloud(
  
 // get Jenkins instance
 Jenkins jenkins = Jenkins.getInstance()
- 
-// get credentials domain
-def domain = Domain.global()
- 
-// get credentials store
-def store = jenkins.getExtensionList('com.cloudbees.plugins.credentials.SystemCredentialsProvider')[0].getStore()
- 
-// add credential to store
-store.addCredentials(domain, aWSCredentialsImpl)
- 
+  
 // add cloud configuration to Jenkins
 jenkins.clouds.add(amazonEC2Cloud)
  
