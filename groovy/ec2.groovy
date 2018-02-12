@@ -47,7 +47,7 @@ def SlaveTemplateUsEast1Parameters = [
 def AmazonEC2CloudParameters = [
   cloudName:      'AWSCloud',
   credentialsId:  '',
-  instanceCapStr: '2',
+  instanceCapStr: '1',
   privateKey:     '''-----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAs6crJguE5UBaakNiEXXw+Jur6jawN3I9VTVdobcG2+3SVOxkGd/DbMxJn7iz
 ZzV6/HzEhcYT1CNGNO1VtWZ1Hdq8l/VkaFGgP7y7ob0VwvCYIW7snpVb+7JmrMT1cn60IYQOCKjT
