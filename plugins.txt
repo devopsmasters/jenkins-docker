@@ -85,3 +85,5 @@ jquery
 build-pipeline-plugin
 ec2
 artifactory
+blueocean
+delivery-pipeline-plugin
