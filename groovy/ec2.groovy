@@ -11,6 +11,7 @@ import hudson.plugins.ec2.SpotConfiguration
 import hudson.plugins.ec2.UnixData
 import jenkins.model.Jenkins
  
+def env_secgr = System.getenv('SECURITYGROUP')
 // parameters
 def SlaveTemplateUsEast1Parameters = [
   ami:                      'ami-866878fc',
@@ -31,7 +32,7 @@ def SlaveTemplateUsEast1Parameters = [
   numExecutors:             '20',
   remoteAdmin:              'ec2-user',
   remoteFS:                 '',
-  securityGroups:           'JenkinsSlaveSG',
+  securityGroups:           "$env_secgr",
   stopOnTerminate:          false,
   subnetId:                 'subnet-3c414130',
   tags:                     new EC2Tag('Name', 'jenkins-slave'),
