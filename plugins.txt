@@ -83,3 +83,4 @@ conditional-buildstep
 parameterized-trigger
 jquery
 build-pipeline-plugin
+ec2
