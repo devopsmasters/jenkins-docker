@@ -26,54 +26,50 @@ def SlaveTemplateUsEast1Parameters = [
   initScript:               '',
   instanceCapStr:           '2',
   jvmopts:                  '',
-  labelString:              'aws.ec2.us.east.jenkins.slave',
+  labelString:              'us-east1-jenkins-slave',
   launchTimeoutStr:         '',
-  numExecutors:             '1',
+  numExecutors:             '20',
   remoteAdmin:              'ec2-user',
   remoteFS:                 '',
-  securityGroups:           'sg-11111111',
+  securityGroups:           'JenkinsSlaveSG',
   stopOnTerminate:          false,
-  subnetId:                 'subnet-SSSSSSSS',
+  subnetId:                 'subnet-3c414130',
   tags:                     new EC2Tag('Name', 'jenkins-slave'),
   tmpDir:                   '',
-  type:                     't2.medium',
+  type:                     't2.small',
   useDedicatedTenancy:      false,
   useEphemeralDevices:      true,
   usePrivateDnsName:        true,
   userData:                 '',
-  zone:                     'us-east-1a,us-east-1b'
+  zone:                     'us-east-1f'
 ]
  
 def AmazonEC2CloudParameters = [
-  cloudName:      'MyCompany',
-  credentialsId:  'jenkins-aws-key',
+  cloudName:      'AWSCloud',
+  credentialsId:  '',
   instanceCapStr: '2',
   privateKey:     '''-----BEGIN RSA PRIVATE KEY-----
-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
+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
 -----END RSA PRIVATE KEY-----''',
   region: 'us-east-1',
   useInstanceProfileForCredentials: false
