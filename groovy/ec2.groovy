@@ -15,7 +15,7 @@ import jenkins.model.Jenkins
 def SlaveTemplateUsEast1Parameters = [
   ami:                      'ami-866878fc',
   associatePublicIp:        false,
-  connectBySSHProcess:      true,
+  connectBySSHProcess:      false,
   connectUsingPublicIp:     false,
   customDeviceMapping:      '',
   deleteRootOnTermination:  true,
@@ -24,7 +24,7 @@ def SlaveTemplateUsEast1Parameters = [
   iamInstanceProfile:       '',
   idleTerminationMinutes:   '5',
   initScript:               '',
-  instanceCapStr:           '2',
+  instanceCapStr:           '1',
   jvmopts:                  '',
   labelString:              'us-east1-jenkins-slave',
   launchTimeoutStr:         '',
