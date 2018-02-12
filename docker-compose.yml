@@ -12,7 +12,6 @@ services:
       - ./downloads:/var/jenkins_home/downloads
       - ./jobs:/var/jenkins_home/jobs
       - ./m2deps:/var/jenkins_home/.m2/repository
-      - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - frontend
     deploy:
