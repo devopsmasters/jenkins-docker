@@ -9,9 +9,7 @@ services:
     ports:
       - 80:8080
     volumes:
-      - ./downloads:/var/jenkins_home/downloads
-      - ./jobs:/var/jenkins_home/jobs
-      - ./m2deps:/var/jenkins_home/.m2/repository
+      - /opt/jenkins_home:/var/jenkins_home
     networks:
       - frontend
     deploy:
