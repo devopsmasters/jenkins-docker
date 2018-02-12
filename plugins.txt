@@ -84,3 +84,4 @@ parameterized-trigger
 jquery
 build-pipeline-plugin
 ec2
+artifactory
