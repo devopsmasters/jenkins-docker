@@ -12,9 +12,11 @@ import hudson.plugins.ec2.UnixData
 import jenkins.model.Jenkins
  
 def env_secgr = System.getenv('SECURITYGROUP')
+def env_subnets = System.getenv('SUBNETS')
+def env_instancetype = System.getenv('INSTANCETYPE')
 // parameters
 def SlaveTemplateUsEast1Parameters = [
-  ami:                      'ami-866878fc',
+  ami:                      'ami-e0594b9a',
   associatePublicIp:        false,
   connectBySSHProcess:      false,
   connectUsingPublicIp:     false,
@@ -23,30 +25,30 @@ def SlaveTemplateUsEast1Parameters = [
   description:              'Jenkins slave EC2 US East 1',
   ebsOptimized:             false,
   iamInstanceProfile:       '',
-  idleTerminationMinutes:   '5',
+  idleTerminationMinutes:   '10',
   initScript:               '',
   instanceCapStr:           '1',
   jvmopts:                  '',
-  labelString:              'us-east1-jenkins-slave',
+  labelString:              'linux-jenkins-slave',
   launchTimeoutStr:         '',
   numExecutors:             '20',
   remoteAdmin:              'ec2-user',
   remoteFS:                 '',
   securityGroups:           "$env_secgr",
   stopOnTerminate:          false,
-  subnetId:                 'subnet-3c414130',
-  tags:                     new EC2Tag('Name', 'jenkins-slave'),
+  subnetId:                 "$env_subnets",
+  tags:                     new EC2Tag('Name', 'linux-jenkins-slave'),
   tmpDir:                   '',
-  type:                     't2.small',
+  type:                     "$env_instancetype",
   useDedicatedTenancy:      false,
-  useEphemeralDevices:      true,
+  useEphemeralDevices:      false,
   usePrivateDnsName:        true,
   userData:                 '',
-  zone:                     'us-east-1f'
+  zone:                     ''
 ]
  
 def AmazonEC2CloudParameters = [
-  cloudName:      'AWSCloud',
+  cloudName:      'AWSCloud-USEAST1',
   credentialsId:  '',
   instanceCapStr: '1',
   privateKey:     '''-----BEGIN RSA PRIVATE KEY-----
