@@ -51,29 +51,7 @@ def AmazonEC2CloudParameters = [
   cloudName:      'AWSCloud-USEAST1',
   credentialsId:  '',
   instanceCapStr: '1',
-  privateKey:     '''-----BEGIN RSA PRIVATE KEY-----
-MIIEogIBAAKCAQEAs6crJguE5UBaakNiEXXw+Jur6jawN3I9VTVdobcG2+3SVOxkGd/DbMxJn7iz
-ZzV6/HzEhcYT1CNGNO1VtWZ1Hdq8l/VkaFGgP7y7ob0VwvCYIW7snpVb+7JmrMT1cn60IYQOCKjT
-sl4UfEapAA0CHptMNwarzb57kn0TAUYKw1fVvr4Gm2p36Yg126npm7Rt6egDmmZXRsvqhstOnzrc
-wQt/v+B0AwdFY/QyVOslgwW6DzHJqMy94XoS+tacdyNpLAupsrcsnWZ6KWFEyb4P4fq5g+PSxYaT
-Qs1LFDhMicDAKeaQRWUnvJLMJ5JwVGFM2Tikplfnxjj+ba5AwRRagwIDAQABAoIBAHZXoWnPXryx
-dp3XQ2ujGJh723ROkCgGHfbaT5JugZswf0Qn8AzHRPGPZNRNFAjhxuE5wy8n+vncPqwwxyvWkUGY
-THGBWaIKWxiBV8xERWiDmoMzkbUpSE12CIK4v8KrSjdlyOTVaZZuuOnglgUNjJ7iyALbZyMB3l7x
-+yn0nLRuNa1vBq77QrFSWFGRpbUCuN7AFjhdhHfTL/l/1ry/hRNChoPQVVk0+IMUL+duoAbl2kLA
-aQZzvZefT/3JrWjbOsfjfPBVjkoNFDo3todKOZtasYZnBQ2B0oztNCLGhU+dtpu9LwFoHcJxseBn
-V954+V2Mfi6auEMqf/lrj7qrNeECgYEA5D6NYHMlv/9qabbgZgv6Ju8fkdvWLTnULKBTa67rtX9k
-MtITptCkbaJHl7alGORg9M7NEzETsvWO1nmLbDmTuQ8/P9uVnDwaG2Qb1mIPtaNOsa0nkJCpDYSJ
-24TWHKFGcoeq8pmQfNaixzhfAYsqgavMCJPYacpqaM0pSwuxQBMCgYEAyX/syVhm3WBPom7pRFU2
-91OJQWIhGqGAiLkERQojalfBs6gWw6oMuvj0YTH/D0XwWidiDTMFMz+q4yWN2GjSdHT5f+ID9tDL
-0e14bI4LCBmt8NYM2u8eVgJK8teoxrd5DPuy2BhXZDFN0pO4DC29Hm4jXvhM3op85KxUHUD0KdEC
-gYB0KGV45YEbwlgcruZq6MOJVv7hE1lfsOOLRpjN37qzpr6Oop0/s0VLSmBXFKvXDDtPu4NgtgRJ
-enEUM81B6deFQf41eIIeffPnZr5ID6XhEdh10iKljwmKCJ7EKklxTp50oRjd2EtRTUaQTt8DARlD
-3vO6lct4o3weE/Nk7vFpIwKBgDESDkAaXzKaOcp86CHT/sbMeSiLFTS/D+Y76GZHycgkBvARhzmv
-N9pwtlLVMiAuEBJkdORyAFoyrxMSGjERle72baxPBlgdEQXWpvUIwnb+ifWUqxzGDsUzWb0598gs
-9jXLNgqaIu4rc6BMiQ2uNdgrSkHehhnL8A5gSTu2jb+BAoGAPEgqgf7JwktPq324MEjwLErqTf5d
-mYoWDO8q7m5Ff2LrJgDdyRkhvNfBl+meT8//9XXQVYyanFNunhY1FrhPjVDB/hUVaLcjkwJTl1Rk
-cdAVSTc/Jvj3rmvJGl4JCIeBP+cR8DHN1wzpGKEbEyCT5+e8s/0MpDbNe4qi6ddyE/c=
------END RSA PRIVATE KEY-----''',
+  privateKey:     '''ENTER KEY HERE''',
   region: 'us-east-1',
   useInstanceProfileForCredentials: false
 ]
