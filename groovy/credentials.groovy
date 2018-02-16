@@ -13,5 +13,8 @@ import hudson.plugins.sshslaves.*
 global_domain = Domain.global()
 credentials_store = Jenkins.instance.getExtensionList('com.cloudbees.plugins.credentials.SystemCredentialsProvider')[0].getStore()
 
-cred = new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL,'artifactory-login','artifactory-login-creds','admin','password')
-credentials_store.addCredentials(global_domain, cred)
+cred1 = new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL,'artifactory-login','artifactory-login-creds','admin','password')
+credentials_store.addCredentials(global_domain, cred1)
+
+cred2 = new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL,'docker-hub-creds','docker-hub-creds','test-hub-user','testpassword')
+credentials_store.addCredentials(global_domain, cred2)
