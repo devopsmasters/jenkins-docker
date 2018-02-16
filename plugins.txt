@@ -87,3 +87,4 @@ ec2
 artifactory
 blueocean
 delivery-pipeline-plugin
+pipeline-maven
