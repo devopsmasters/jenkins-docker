@@ -16,7 +16,7 @@ def env_subnets = System.getenv('SUBNETS')
 def env_instancetype = System.getenv('INSTANCETYPE')
 // parameters
 def SlaveTemplateUsEast1Parameters = [
-  ami:                      'ami-e0594b9a',
+  ami:                      'ami-70859c0a',
   associatePublicIp:        false,
   connectBySSHProcess:      false,
   connectUsingPublicIp:     false,
