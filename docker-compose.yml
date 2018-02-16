@@ -9,8 +9,8 @@ services:
     ports:
       - 80:8080
     env_file:
-      - /tmp/docker-inputs.env
       - ./docker-inputs.env
+      - /tmp/docker-inputs.env
     volumes:
       - /opt/jenkins_home:/var/jenkins_home
     networks:
