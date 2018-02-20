@@ -14,6 +14,8 @@ import jenkins.model.Jenkins
 def env_secgr = System.getenv('SECURITYGROUP')
 def env_subnets = System.getenv('SUBNETS')
 def env_instancetype = System.getenv('INSTANCETYPE')
+def env_iamrole = System.getenv('IAMROLE')
+
 // parameters
 def SlaveTemplateUsEast1Parameters = [
   ami:                      'ami-70859c0a',
@@ -24,7 +26,7 @@ def SlaveTemplateUsEast1Parameters = [
   deleteRootOnTermination:  true,
   description:              'Jenkins slave EC2 US East 1',
   ebsOptimized:             false,
-  iamInstanceProfile:       '',
+  iamInstanceProfile:       "$env_iamrole",
   idleTerminationMinutes:   '10',
   initScript:               '',
   instanceCapStr:           '1',
