@@ -11,7 +11,7 @@ import com.cloudbees.plugins.credentials.common.StandardUsernameCredentials
     def desc = inst.getDescriptor("org.jfrog.hudson.ArtifactoryBuilder")
     CredentialsConfig deployerCredentials = new CredentialsConfig('admin', 'password', 'artifactory-user',false)
     List<ArtifactoryServer> servers =  desc.getArtifactoryServers()
-ArtifactoryServer server = new ArtifactoryServer('local-artifactory', "${env_arturl}", deployerCredentials, null, 300, false, 3)
+ArtifactoryServer server = new ArtifactoryServer('local-artifactory', "$env_arturl", deployerCredentials, null, 300, false, 3)
     if (servers == null || servers.empty) {
       servers = [server]
     } else {
