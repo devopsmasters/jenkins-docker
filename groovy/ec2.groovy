@@ -45,7 +45,7 @@ def SlaveTemplateUsEast1Parameters = [
   useDedicatedTenancy:      false,
   useEphemeralDevices:      false,
   usePrivateDnsName:        true,
-  userData:                 '',
+  userData:                 'sudo yum install jq -y',
   zone:                     ''
 ]
  
