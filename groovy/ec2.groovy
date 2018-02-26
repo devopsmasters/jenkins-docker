@@ -18,7 +18,7 @@ def env_iamrole = System.getenv('IAMROLE')
 
 // parameters
 def SlaveTemplateUsEast1Parameters = [
-  ami:                      'ami-70859c0a',
+  ami:                      'ami-a9c42dd4',
   associatePublicIp:        false,
   connectBySSHProcess:      false,
   connectUsingPublicIp:     false,
