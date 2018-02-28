@@ -8,7 +8,7 @@
         <hudson.model.StringParameterDefinition>
           <name>repo_name</name>
           <description>Docker Repo Name</description>
-          <defaultValue>rajeshgopal/tomcat-1</defaultValue>
+          <defaultValue>springboot1</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
