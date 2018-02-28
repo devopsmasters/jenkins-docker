@@ -27,7 +27,7 @@ def SlaveTemplateUsEast1Parameters = [
   description:              'Jenkins slave EC2 US East 1',
   ebsOptimized:             false,
   iamInstanceProfile:       "$env_iamrole",
-  idleTerminationMinutes:   '10',
+  idleTerminationMinutes:   '40',
   initScript:               '',
   instanceCapStr:           '1',
   jvmopts:                  '',
